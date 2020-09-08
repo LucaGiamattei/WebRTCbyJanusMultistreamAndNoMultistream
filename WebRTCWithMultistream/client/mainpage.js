@@ -315,7 +315,11 @@ $(document).ready(function() {
 								
 								if($('#mute').length === 0) {
 									// Add a 'mute' button
+<<<<<<< HEAD
 									$('#bd').append('<button class="btn " id="mute">Mute</button>');
+=======
+									$('#myvideo-container').append('<button class="btn " id="mute">Mute</button>');
+>>>>>>> main
 									$('#mute').click(toggleMute);
 									// Add an 'unpublish' button
 									$('#bd').append('<button class="btn " id="unpublish">Unpublish Webcam</button>');
@@ -818,11 +822,15 @@ function preShareScreen() {
 			}
 		});
 	} else {
+<<<<<<< HEAD
 		if(joined){
 			publishOwnScreen();
 		}else{
 			joinToRoomScreen();
 		}
+=======
+		joinToRoomScreen();
+>>>>>>> main
 	}
 }
 
