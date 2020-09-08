@@ -1,1 +1,0 @@
-Applicazioni Telematiche

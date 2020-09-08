@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Janus WebRTC Server: Video Room Demo</title>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/6.4.0/adapter.min.js" ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js" ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+<script type="text/javascript" src="/janusFolder/janus.js" ></script>
+
+<script type="text/javascript" src="mainpage.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cerulean/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/demo.css" type="text/css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css"/>
+<link rel="stylesheet" href="/index.css"/>
+
+</head>
+<body id="bd">
+
+
+	<div class="hide" id="gallery" >
+		<div class="video-container" id="myvideo-container"> </div>
+		<div class="video-container hide" id="myvideo-containerScreen"></div>
+			
+			
+		
+	</div>
+
+	
+	
+
+<div class="container" id="mainPage">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="page-header" id="pHeader">
+				<h1> Elaborato di Applicazioni Telematiche</h1>
+			</div>
+		
+	
+			<div class="row" >
+				<div class="col-md-12">
+
+					<div class="container " id="loginPage">			
+						<input autocomplete="off" class="form-control" type="text" placeholder="Choose a display name" id="username" />
+						<button class="btn " autocomplete="off" id="login" onclick="return login()">Login</button>
+					</div>
+
+					<div class="container hide" id="buttonsPage">		
+						<button class="btn " autocomplete="off" id="createRoom">Create new room</button>
+									<button class="btn " autocomplete="off" id="joinToRoom">Join the room</button>
+					</div>
+
+					<div class="container hide" id="JoinedOrCreatedToRoom"></div>
+
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
